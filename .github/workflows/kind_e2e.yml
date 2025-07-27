@@ -17,10 +17,10 @@ jobs:
     name: Check whether tests need to be run based on diff
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
       with:
         fetch-depth: 0
-    - uses: antrea-io/has-changes@v2
+    - uses: antrea-io/has-changes@8af46c0ea505faf5c57d655802471141dc1ecc26 # v2
       id: check_diff
       with:
         paths-ignore: docs/* *.md
@@ -33,7 +33,7 @@ jobs:
     if: ${{ needs.check-changes.outputs.has_changes == 'yes' }}
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
     - name: Build container images
       run: make
     - name: Install Kind
