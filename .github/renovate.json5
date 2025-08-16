@@ -30,11 +30,6 @@
   packageRules: [
     {
       matchManagers: ["npm"],
-      enabled: false,
-    },
-
-    {
-      matchManagers: ["npm"],
       matchFileNames: ["/client/web/antrea-ui/*"],
       addLabels: ["javascript"],
       enabled: true,
@@ -50,7 +45,6 @@
     {
       matchManagers: ["gomod"],
       addLabels: ["go"],
-      enabled: true,
     },
 
     {
@@ -80,7 +74,6 @@
     {
       matchManagers: ["github-actions"],
       addLabels: ["github_actions"],
-      enabled: true,
     },
   ],
 }
