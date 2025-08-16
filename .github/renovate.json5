@@ -28,16 +28,21 @@
   },
 
   packageRules: [
+    // Disable indirect go dependencies updates, resource: https://github.com/renovatebot/renovate/discussions/35225#discussioncomment-13666269
     {
-      matchManagers: ["npm"],
+      matchManagers: ["gomod"],
+      matchDepTypes: ["indirect"],
       enabled: false,
     },
 
     {
       matchManagers: ["npm"],
-      matchFileNames: ["/client/web/antrea-ui/*"],
       addLabels: ["javascript"],
-      enabled: true,
+    },
+
+    {
+      matchManagers: ["npm"],
+      matchFileNames: ["/client/web/antrea-ui/*"],
     },
 
     {
@@ -50,7 +55,6 @@
     {
       matchManagers: ["gomod"],
       addLabels: ["go"],
-      enabled: true,
     },
 
     {
@@ -66,7 +70,6 @@
       matchUpdateTypes: ["patch"],
       groupName: "k8s",
       groupSlug: "k8s",
-      enabled: true,
     },
 
     {
@@ -74,13 +77,11 @@
       matchPackagePrefixes: ["golang.org/x/"],
       groupName: "go",
       groupSlug: "go",
-      enabled: true,
     },
 
     {
       matchManagers: ["github-actions"],
       addLabels: ["github_actions"],
-      enabled: true,
     },
   ],
 }
