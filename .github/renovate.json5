@@ -48,7 +48,7 @@
       matchFileNames: ["/client/web/antrea-ui/*"],
       automerge: true,
       automergeType: "pr",
-    }
+    },
 
     {
       matchManagers: ["npm"],
