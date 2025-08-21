@@ -45,15 +45,10 @@
       matchManagers: ["npm"],
       matchUpdateTypes: ["minor", "patch"],
       "matchCurrentVersion": "!/^0/", //  exclude any dependencies which are pre-1.0.0 because those can make breaking changes at any time
+      matchFileNames: ["/client/web/antrea-ui/*"],
       automerge: true,
       automergeType: "pr",
     }
-
-    {
-      matchManagers: ["npm"],
-      matchFileNames: ["!/client/web/antrea-ui/*"], // Exclude other file paths
-      enabled: false,
-    },
 
     {
       matchManagers: ["npm"],
