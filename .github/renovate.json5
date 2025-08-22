@@ -38,17 +38,15 @@
     {
       matchManagers: ["npm"],
       addLabels: ["javascript"],
-    },
-
-    {
-      matchManagers: ["npm"],
       matchFileNames: ["/client/web/antrea-ui/*"],
     },
 
     {
       matchManagers: ["npm"],
+      addLabels: ["javascript"],
       matchUpdateTypes: ["minor", "patch"],
       "matchCurrentVersion": "!/^0/", // exclude any dependencies which are pre-1.0.0 because those can make breaking changes at any time
+      matchFileNames: ["/client/web/antrea-ui/*"],
       automerge: true,
       automergeType: "pr",
     },
@@ -57,13 +55,6 @@
       matchManagers: ["npm"],
       matchPackageNames: ["@types/node"],
       matchUpdateTypes: ["major"],
-      enabled: false,
-    },
-
-    // Disable npm updates on other paths
-    {
-      matchManagers: ["npm"],
-      matchFileNames: ["!/client/web/antrea-ui/*"], // Only allow this path
       enabled: false,
     },
 
