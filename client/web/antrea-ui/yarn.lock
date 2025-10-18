@@ -3481,9 +3481,9 @@ js-yaml@^4.1.0:
     argparse "^2.0.1"
 
 jsdom-testing-mocks@^1.13.1:
-  version "1.13.1"
-  resolved "https://registry.yarnpkg.com/jsdom-testing-mocks/-/jsdom-testing-mocks-1.13.1.tgz#14682f2eec4c76777cf9ae6d42de7bf665a4b83e"
-  integrity sha512-8BAsnuoO4DLGTf7LDbSm8fcx5CUHSv4h+bdUbwyt6rMYAXWjeHLRx9f8sYiSxoOTXy3S1e06pe87KER39o1ckA==
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/jsdom-testing-mocks/-/jsdom-testing-mocks-1.16.0.tgz#2ec5962c9a4e5e89ecfd7f29560e37f44c66ea2a"
+  integrity sha512-wLrulXiLpjmcUYOYGEvz4XARkrmdVpyxzdBl9IAMbQ+ib2/UhUTRCn49McdNfXLff2ysGBUms49ZKX0LR1Q0gg==
   dependencies:
     bezier-easing "^2.1.0"
     css-mediaquery "^0.1.2"
