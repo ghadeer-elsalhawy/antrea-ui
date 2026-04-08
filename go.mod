@@ -1,10 +1,10 @@
 module antrea.io/antrea-ui
 
-go 1.24.0
+go 1.25.0
 
 require (
 	github.com/blang/semver v3.5.1+incompatible
-	github.com/coreos/go-oidc/v3 v3.14.1
+	github.com/coreos/go-oidc/v3 v3.18.0
 	github.com/gin-contrib/cors v1.7.6
 	github.com/gin-gonic/gin v1.10.1
 	github.com/go-logr/logr v1.4.3
@@ -24,7 +24,7 @@ require (
 	go.uber.org/zap v1.27.0
 	golang.org/x/crypto v0.40.0
 	golang.org/x/net v0.42.0
-	golang.org/x/oauth2 v0.30.0
+	golang.org/x/oauth2 v0.36.0
 	golang.org/x/time v0.12.0
 	k8s.io/api v0.31.10
 	k8s.io/apimachinery v0.31.10
@@ -84,7 +84,7 @@ require (
 	github.com/gabriel-vasile/mimetype v1.4.9 // indirect
 	github.com/gin-contrib/sse v1.1.0 // indirect
 	github.com/go-errors/errors v1.0.2-0.20180813162953-d98b870cc4e0 // indirect
-	github.com/go-jose/go-jose/v4 v4.0.5 // indirect
+	github.com/go-jose/go-jose/v4 v4.1.4 // indirect
 	github.com/go-openapi/jsonpointer v0.19.6 // indirect
 	github.com/go-openapi/jsonreference v0.20.2 // indirect
 	github.com/go-openapi/swag v0.22.4 // indirect
