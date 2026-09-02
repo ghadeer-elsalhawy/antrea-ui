@@ -1,6 +1,6 @@
 module antrea.io/antrea-ui
 
-go 1.24.0
+go 1.25
 
 require (
 	github.com/blang/semver v3.5.1+incompatible
@@ -30,7 +30,7 @@ require (
 	k8s.io/apimachinery v0.31.10
 	k8s.io/apiserver v0.31.10
 	k8s.io/client-go v0.31.10
-	k8s.io/utils v0.0.0-20240711033017-18e509b52bc8
+	k8s.io/utils v0.0.0-20260707023825-cf1189d6abe3
 )
 
 require (
